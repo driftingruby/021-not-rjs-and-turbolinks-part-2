@@ -1,6 +1,6 @@
 <tr id="<%= user.id %>">
   <td>
-    <%= link_to icon('pencil'), edit_user_path(user) %>
+    <%= link_to icon('pencil'), edit_user_path(user), remote: true %>
     <%= link_to icon('trash'), user, method: :delete, remote: true, data: { confirm: 'Are you sure?' } %>
   </td>
   <td><%= user.first_name %></td>
